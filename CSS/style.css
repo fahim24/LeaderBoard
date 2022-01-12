@@ -10,7 +10,9 @@ body {
 	background-color: #f3f1ff;
 	font-family: "Poppins", sans-serif;
 }
-main {
+
+main,
+nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,15 +43,38 @@ hr {
     navigation style
   ------------------  */
 nav {
-	height: 80px;
+	background-color: #562eff;
+	height: 100px;
+	justify-content: center;
+}
+.navbar {
+	width: 900px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #562eff;
 }
-nav span {
+.menu {
 	display: flex;
 	align-items: center;
+	color: white;
+	gap: 30px;
+}
+.menu img {
+	width: 40px;
+	height: 50px;
+}
+.links {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+.links a {
+	text-decoration: none;
+	color: white;
+}
+.links img {
+	width: 50px;
+	height: 50px;
 }
 /*  -------------
     Top Players
@@ -147,7 +172,8 @@ nav span {
 		Media Quaries 
 	--------------- */
 @media only screen and (max-width: 688px) {
-	.container {
+	.container,
+	.navbar {
 		width: 100%;
 	}
 	.section-title {
@@ -170,7 +196,8 @@ nav span {
 	}
 }
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-	.container {
+	.container,
+	.navbar {
 		width: 100%;
 	}
 	.section-title {
